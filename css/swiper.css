@@ -351,7 +351,7 @@
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-    content: url(/img/icon__swiper-arrow--white.png);
+    content: url(/img/swiper_arrow_ico.png);
     transform: rotate(-180deg);
 }
 
@@ -364,7 +364,7 @@
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-    content: url(/img/icon__swiper-arrow--white.png);
+    content: url(/img/swiper_arrow_ico.png);
 }
 
 .swiper-pagination {
