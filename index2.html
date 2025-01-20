@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김밥장수</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/command.css" type="text/css">
+    <!-- scss -->
+    <link rel="stylesheet" href="/css/style.scss">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="/css/swiper.css" />
+    <!-- js -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"> -->
+    <!-- XE ICON -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
+        type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <script src="/web/js/jquery-1.11.2.min.js"></script>
+    <script src="/js/ul.js"></script>
+
+
+
+
+
+
+
+    <link href="/css/alert1.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/themes.css" />
+    <script type="text/javascript" src="/js/alert.js"></script>
+    <link href="/css/ge.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <dl id="shNotice" class="open">
+            <dt>
+                <p>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-volume-2">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                        </svg></span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg></span>
+                </p>
+            </dt>
+            <dd>
+                <a href="">김밥장수 홈페이지가 새롭게 리뉴얼 되었습니다.</a>
+            </dd>
+        </dl>
+        <div class="quick_main d-none d-lg-block" id="quick">
+            <ul>
+                <li>
+                    <a href="tel:1688-9804">
+                        <img src="/img/favicon.png" class="img-fluid q-img-hover" alt="">
+                        <div class="q-tit">창업상담<br>1688-9804</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:return false;">
+                        <span class="q-icon font45"><i class="xi-kakaotalk xi-4x" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="pen-square" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M400 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zM238.1 177.9L102.4 313.6l-6.3 57.1c-.8 7.6 5.6 14.1 13.3 13.3l57.1-6.3L302.2 242c2.3-2.3 2.3-6.1 0-8.5L246.7 178c-2.5-2.4-6.3-2.4-8.6-.1zM345 165.1L314.9 135c-9.4-9.4-24.6-9.4-33.9 0l-23.1 23.1c-2.3 2.3-2.3 6.1 0 8.5l55.5 55.5c2.3 2.3 6.1 2.3 8.5 0L345 199c9.3-9.3 9.3-24.5 0-33.9z">
+                                </path>
+                            </i><!-- <i class="fas fa-pen-square"></i> Font Awesome fontawesome.com --></span>
+                        <div class="q-tit">모바일 상담</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://smartstore.naver.com/_thestory" target="_blank" rel="noopener">
+                        <span class="q-icon font45"><i class="xi-cart xi-4x "></i></span>
+                        <div class="q-tit">온라인 몰</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:aty9967@naver.com">
+                        <span class="q-icon"><i class="xi-users xi-4x" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="handshake" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M434.7 64h-85.9c-8 0-15.7 3-21.6 8.4l-98.3 90c-.1.1-.2.3-.3.4-16.6 15.6-16.3 40.5-2.1 56 12.7 13.9 39.4 17.6 56.1 2.7.1-.1.3-.1.4-.2l79.9-73.2c6.5-5.9 16.7-5.5 22.6 1 6 6.5 5.5 16.6-1 22.6l-26.1 23.9L504 313.8c2.9 2.4 5.5 5 7.9 7.7V128l-54.6-54.6c-5.9-6-14.1-9.4-22.6-9.4zM544 128.2v223.9c0 17.7 14.3 32 32 32h64V128.2h-96zm48 223.9c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM0 384h64c17.7 0 32-14.3 32-32V128.2H0V384zm48-63.9c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16c0-8.9 7.2-16 16-16zm435.9 18.6L334.6 217.5l-30 27.5c-29.7 27.1-75.2 24.5-101.7-4.4-26.9-29.4-24.8-74.9 4.4-101.7L289.1 64h-83.8c-8.5 0-16.6 3.4-22.6 9.4L128 128v223.9h18.3l90.5 81.9c27.4 22.3 67.7 18.1 90-9.3l.2-.2 17.9 15.5c15.9 13 39.4 10.5 52.3-5.4l31.4-38.6 5.4 4.4c13.7 11.1 33.9 9.1 45-4.7l9.5-11.7c11.2-13.8 9.1-33.9-4.6-45.1z">
+                                </path>
+                            </i><!-- <i class="fas fa-handshake "></i> Font Awesome fontawesome.com --></span>
+                        <div class="q-tit">협업 및 제안</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-container">
+            <div id="header">
+                <div class="header-logo">
+                    <img src="/img/header_logo.svg" alt="header-logo">
+                </div>
+                <div class="nav-wrap">
+                    <ul class="nav">
+                        <li><a href="javascript:return false;">BRAND</a></li>
+                        <li><a href="javascript:return false;">MENU</a></li>
+                        <li><a href="javascript:return false;">FRANCHISE</a></li>
+                        <li><a href="javascript:return false;">NEWS</a></li>
+                        <li><a href="javascript:return false;">STORE</a></li>
+                    </ul>
+                </div>
+                <div class="etc">
+
+                    <div class="sns">
+                        <ul class="social">
+                            <li><a href="https://www.instagram.com/kimbapjangsu/" target="_blank"><i
+                                        class="xi-instagram xi-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="language">
+                        <ul class="lang">
+                            <li><a href="#"><img src="/img/ko.png" alt="korea"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <div class="inner_submenu">
+                        <ul class="w1">
+                            <li><a href="javascript:return false;">브랜드 소개</a></li>
+                            <li><a href="javascript:return false;">경영이념</a></li>
+                            <li><a href="javascript:return false;">BI</a></li>
+                        </ul>
+                        <ul class="w2">
+                            <li><a href="javascript:return false;">김밥</a></li>
+                            <li><a href="javascript:return false;">분식</a></li>
+                            <li><a href="javascript:return false;">튀김</a></li>
+                            <li><a href="javascript:return false;">세트</a></li>
+                        </ul>
+                        <ul class="w3">
+                            <li><a href="javascript:return false;">가맹신청</a></li>
+                            <li><a href="javascript:return false;">인테리어</a></li>
+                        </ul>
+                        <ul class="w4">
+                            <li><a href="javascript:return false;">공지사항</a></li>
+                            <li><a href="javascript:return false;">FAQ</a></li>
+                        </ul>
+                        <ul class="w5">
+                            <li><a href="javascript:return false;">채용안내</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-contents">
+                <article id="inc02">
+                    <ul>
+                        <li>
+                            <p><span class="counting" data-count="2">0</span><i>년</i></p>
+                            <p class="tit">김밥장수가 탄생한지</p>
+                        </li>
+                        <li>
+                            <p><span class="counting" data-count="5">0</span><i>점</i></p>
+                            <p class="tit">가맹점 수</p>
+                        </li>
+                        <li>
+                            <p><span class="counting" data-count="2468773">0</span><i>건</i></p>
+                            <p class="tit">주문건 수</p>
+                        </li>
+                    </ul>
+                </article>
+                <div class="container">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <span class="text">Scroll down</span>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/banner1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/sectin1banner.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div id="section1">
+            <div class="menu-bg">
+                <div class="section sec-main-menu fp-section fp-table active motion fp-completely"
+                    style="opacity: 1; height: 959px;" data-anchor="page3">
+                    <div class="fp-tableCell" style="height: 959px;">
+                        <div class="sec-inner">
+                            <div class="bot"></div>
+                            <!-- 20240528 시즌메뉴만 노출하는 걸로 요건변경 -->
+                            <!-- 20240529 원복 요청 -->
+                            <!--<h2>시즌메뉴</h2>-->
+
+                            <div class="slider-tab">
+                                <button type="button" class="btnPdCtgCd" cd="10" !class="on">신메뉴</button>
+                                <button type="button" class="btnPdCtgCd" cd="20" !class="on">김밥</button>
+                                <button type="button" class="btnPdCtgCd" cd="30" !class="on">분식</button>
+                                <button type="button" class="btnPdCtgCd" cd="40" !class="on">튀김</button>
+                                <button type="button" class="btnPdCtgCd" cd="50" !class="on">세트</button>
+                            </div>
+                            <div
+                                class="swiper-container productSlider swiper-container-initialized swiper-container-horizontal">
+                                <div class="swiper-wrapper"
+                                    style="transition-duration: 0ms; transform: translate3d(451px, 0px, 0px);">
+                                    <div class="swiper-slide swiper-slide-active" idx="0" data-beverage="의정부햄폭탄김밥"
+                                        cd="10" style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1282"><img src="/img/1.png" alt="의정부햄폭탄김밥"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide swiper-slide-next" idx="1" data-beverage="한돈 제육덮밥" cd="10"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1281"><img src="/img/menu2.png"
+                                                alt="한돈 제육덮밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="2" data-beverage="장수김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1280"><img src="/img/2.png" alt="장수김밥"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="3" data-beverage="조선더블치즈김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1279"><img src="/img/12.png" alt="조선더블치즈김밥"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="4" data-beverage="부산어묵맛살김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1278"><img src="/img/12.png" alt="부산어묵맛살김밥"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="5" data-beverage="여수참치김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1276"><img src="/img/menu2.png"
+                                                alt="여수참치김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="6" data-beverage="종로계란김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1301"><img src="/img/menu2.png"
+                                                alt="종로계란김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="7" data-beverage="제주유부김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1300"><img src="/img/menu2.png"
+                                                alt="제주유부김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="8" data-beverage="제주한돈제육김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1299"><img src="/img/menu2.png"
+                                                alt="제주한돈제육김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="9" data-beverage="한남동스팸김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1289"><img src="/img/menu2.png"
+                                                alt="한남동스팸김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="10" data-beverage="강릉오튀김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1288"><img src="/img/menu2.png"
+                                                alt="강릉오튀김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="11" data-beverage="대전멸추김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1208"><img src="/img/menu2.png"
+                                                alt="대전멸추김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="12" data-beverage="의정부햄폭탄김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1209"><img src="/img/menu2.png"
+                                                alt="의정부햄폭탄김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="13" data-beverage="마포돼지갈비살김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1210"><img src="/img/menu2.png"
+                                                alt="마포돼지갈비살김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="14" data-beverage="이태원소세지김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1211"><img src="/img/menu2.png"
+                                                alt="이태원소세지김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="15" data-beverage="대구참진미김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1212"><img src="/img/menu2.png"
+                                                alt="대구참진미김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="16" data-beverage="서해새우튀김김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1213"><img src="/img/menu2.png"
+                                                alt="서해새우튀김김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="17" data-beverage="남산돈까스김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1111"><img src="/img/menu2.png"
+                                                alt="남산돈까스김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="18" data-beverage="남산맵돈까스김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1112"><img src="/img/menu2.png"
+                                                alt="남산맵돈까스김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="19" data-beverage="담양떡갈비김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1113"><img src="/img/menu2.png"
+                                                alt="담양떡갈비김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="20" data-beverage="목포낙지젓갈김밥" cd="20"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1114"><img src="/img/menu2.png"
+                                                alt="목포낙지젓갈김밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="21" data-beverage="어묵" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1110"><img src="/img/menu2.png" alt="어묵"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="22" data-beverage="꼬치 어묵탕" data-option="None" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1177"><img src="/img/menu2.png"
+                                                alt="꼬치 어묵탕" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="23" data-beverage="쏘팡 소세지" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1115"><img src="/img/menu2.png"
+                                                alt="쏘팡 소세지" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="24" data-beverage="조선 소세지바" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1116"><img src="/img/menu2.png"
+                                                alt="조선소세지바" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="25" data-beverage="순대" data-option="소/중/대" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1117"><img src="/img/menu2.png" alt="순대"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="26" data-beverage="판 떡볶이" data-option="소/중/대" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1118"><img src="/img/menu2.png" alt="판 떡볶이"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="27" data-beverage="순대범벅 떡볶이" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1119"><img src="/img/menu2.png"
+                                                alt="순대범벅 떡볶이" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="28" data-beverage="한돈 제육덮밥" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1120"><img src="/img/menu2.png"
+                                                alt="한돈 제육덮밥" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="29" data-beverage="옛날 돈까스" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1073"><img src="/img/menu2.png" alt="옛날돈까스"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="30" data-beverage="라면" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1074"><img src="/img/menu2.png" alt="라면"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="31" data-beverage="만두 라면" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1075"><img src="/img/menu2.png" alt="만두라면"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="32" data-beverage="해물 엄청나 라면" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1076"><img src="/img/menu2.png"
+                                                alt="해물엄청나라면" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="33" data-beverage="고기만두" data-option="8개" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1077"><img src="/img/menu2.png" alt="고기만두"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="34" data-beverage="김치만두" data-option="8개" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1078"><img src="/img/menu2.png" alt="김치만두"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="35" data-beverage="반반만두" data-option="고기4/김치4"
+                                        cd="30" style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1079"><img src="/img/menu2.png" alt="반반만두"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="36" data-beverage="새우 튀김 우동" cd="30"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1080"><img src="/img/menu2.png"
+                                                alt="새우튀김우동" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="37" data-beverage="어묵튀김" data-option="1개/3개" cd="40"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1081"><img src="/img/menu2.png" alt="어묵튀김"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="38" data-beverage="만두튀김" data-option="1개/3개" cd="40"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1082"><img src="/img/menu2.png" alt="만두튀김"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="39" data-beverage="김말이 튀김" data-option="1개/3개"
+                                        cd="40" style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1083"><img src="/img/menu2.png"
+                                                alt="김말이 튀김" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="40" data-beverage="자바칩카페모카" data-option="ICE/HOT"
+                                        cd="40" style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1084"><img src="/upld/pd/25_1.png"
+                                                alt="자바칩카페모카" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="41" data-beverage="대왕 김말이" data-option="1개/3개"
+                                        cd="40" style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1085"><img src="/img/menu2.png"
+                                                alt="대왕 김말이" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="42" data-beverage="고구마 튀김" data-option="1개/3개"
+                                        cd="40" style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1086"><img src="/img/menu2.png"
+                                                alt="고구마 튀김" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="43" data-beverage="새우 튀김" data-option="1개/3개" cd="40"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1087"><img src="/img/menu2.png" alt="새우튀김"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="44" data-beverage="게다리 튀김" data-option="1개/3개"
+                                        cd="40" style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1088"><img src="/img/menu2.png" alt="게다리튀김"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="45" data-beverage="고추튀김" data-option="1개/3개" cd="40"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1089"><img src="/img/menu2.png" alt="고추튀김"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="46" data-beverage="오징어 튀김" data-option="1개/3개"
+                                        cd="40" style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1215"><img src="/img/menu2.png" alt="오징어튀김"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="47" data-beverage="칼집 소세지" data-option="10개" cd="40"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd no-plate" seq="1216"><img src="/img/menu2.png"
+                                                alt="칼집 소세지" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="48" data-beverage="왕 돈까스 튀김" cd="40"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1102"><img src="/img/menu2.png"
+                                                alt="왕돈까스튀김" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="49" data-beverage="나혼자 세트" cd="50"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1103"><img src="/img/menu2.png" alt="나혼자세트"
+                                                loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="50" data-beverage="너랑나 세트" cd="50"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1104"><img src="/img/menu2.png"
+                                                alt="너랑나 세트" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="51" data-beverage="삼형제 세트" cd="50"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1105"><img src="/img/menu2.png"
+                                                alt="삼형제 세트" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="52" data-beverage="싱글 튀김세트" cd="50"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1106"><img src="/img/menu2.png"
+                                                alt="싱글 튀김세트" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="53" data-beverage="커플 튀김세트" cd="50"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1107"><img src="/img/menu2.png"
+                                                alt="커플 튀김세트" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="54" data-beverage="패밀리 튀김세트" cd="50"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1108"><img src="/upld/pd/54_1.png"
+                                                alt="패밀리 튀김세트" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+
+                                    <div class="swiper-slide" idx="55" data-beverage="김밥장수 튀김세트" cd="50"
+                                        style="width: 431px; margin-right: 20px;">
+                                        <a href="#" class="btnGoViewPd" seq="1109"><img src="/img/menu2.png"
+                                                alt="김밥장수 튀김세트" loading="lazy"></a>
+                                        <div class="swiper-lazy-preloader" style="display: none;"></div>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                            <div class="swiper-nav-group">
+                                <div class="beverage-title" id="beverageTitle">
+                                    <p class="bvrg">의정부 햄폭탄 김밥</p>
+                                    <p class="opt"></p>
+                                </div>
+                                <div class="swiper-button swiper-button-prev swiper-button-disabled" tabindex="0"
+                                    role="button" aria-label="Previous slide" aria-disabled="true"></div>
+                                <div class="swiper-button swiper-button-next" tabindex="0" role="button"
+                                    aria-label="Next slide" aria-disabled="false"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="tab-container">
+                    <div class="tabs on" onclick="openTab('Tab1')">신메뉴</div>
+                    <div class="tabs" onclick="openTab('Tab2')">김밥</div>
+                    <div class="tabs" onclick="openTab('Tab3')">분식</div>
+                    <div class="tabs" onclick="openTab('Tab4')">튀김</div>
+                    <div class="tabs" onclick="openTab('Tab5')">세트</div>
+                </div> -->
+                <!-- <div class="tab_wrap">
+                    <div id="Tab1" class="tab on">
+                        <ul>
+                            <li><a href="#"><img src="/img/menull1.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/menull2.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div id="Tab2" class="tab">
+                        <a href="javascript:return false;"><img src="img/menull2.png" alt=""></a>
+                    </div>
+                    <div id="Tab3" class="tab">
+                        <a href="javascript:return false;"><img src="img/menu1.png" alt=""></a>
+                    </div>
+                    <div id="Tab4" class="tab">
+                        <a href="javascript:return false;"><img src="img/menu2.png" alt=""></a>
+                    </div>
+                    <div id="Tab5" class="tab">
+                        <a href="javascript:return false;"><img src="img/menu1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-nav-group">
+                    <div class="beverage-title" id="beverageTitle">
+                        <p class="bvrg">장수김밥</p>
+                    </div>
+                    <div class="swiper-button swiper-button-prev swiper-button-disabled" tabindex="0" role="button"
+                        aria-label="Previous slide" aria-disabled="true"></div>
+                    <div class="swiper-button swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                        aria-disabled="false"></div>
+                </div> -->
+            </div>
+        </div>
+        <div id="section2">
+            <div class="swiper mySwiper midswiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="javascript:return false;"><img src="/img/midkkt.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide"><img src="/img/midel.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="midbanner2">
+                <div class="viewbtn">
+                    <a href="javascript:return false;">+View more</a>
+                </div>
+            </div>
+            <div class="promotion">
+                <h3 class="main-text-pm">Promotion</h3>
+                <p class="sub-text-pm">김밥장수의 다양한 혜택과 이벤트를 만나보세요</p>
+            </div>
+            <div class="promotion-list">
+                <ul class="pm-list">
+                    <li>
+                        <a href="javascript:return false;">
+                            <div class="proimg">
+                                <img src="/img/prom1.jpg" alt="promotion-1">
+                        </a>
+            </div>
+            <p class="pm-dcr">2025-01-01 - 2025.12.31</p>
+            <div class="border"></div>
+            <p class="pm-dcr2">해물엄청나라면 출시!</p>
+            </li>
+            <li>
+                <a href="javascript:return false;">
+                    <div class="proimg">
+                        <img src="/img/prom2.jpg" alt="">
+                </a>
+        </div>
+        <p class="pm-dcr">2025-01-01 - 2025.12.31</p>
+        <div class="border"></div>
+        <p class="pm-dcr2">가맹비 면제 프로모션</p>
+        </li>
+        <li><a href="javascript:return false;">
+                <div class="proimg">
+                    <img src="/img/prom1.jpg" alt="">
+            </a>
+    </div>
+    <p class="pm-dcr">0000.00.00 - 0000.00.00</p>
+    <div class="border"></div>
+    <p class="pm-dcr2">이벤트 준비중</p>
+    </li>
+    <li><a href="javascript:return false;">
+            <div class="proimg">
+                <img src="/img/prom2.jpg" alt="">
+        </a></div>
+        <p class="pm-dcr">0000.00.00 - 0000.00.00</p>
+        <div class="border"></div>
+        <p class="pm-dcr2">이벤트 준비중</p>
+    </li>
+    <li><a href="javascript:return false;">
+            <div class="proimg">
+                <img src="/img/prom1.jpg" alt="">
+        </a></div>
+        <p class="pm-dcr">0000.00.00 - 0000.00.00</p>
+        <div class="border"></div>
+        <p class="pm-dcr2">이벤트 준비중</p>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div id="section3">
+        <div class="location">
+            <div class="location-text">
+                <div class="h1-title">
+                    <h1>찾아오시는 길</h1>
+                </div>
+                <div class="address">
+                    <img src="/img/Location ico.png" alt="">
+                    <p class="loca-title1">가맹본부</p>
+                </div>
+                <p class="loca-text">경기도 남양주시 다산중앙로 105-18,<br>
+                    지앤지비즈타워 204호</p>
+
+                <div class="call-wrap">
+                    <img src="/img/call.png" alt="call">
+                    <p class="loca-title2">대표번호</p>
+                </div>
+                <p class="loca-text">1688-9804</p>
+            </div>
+            <div class="map">
+                <!-- Kakao map -->
+                <!-- 1. map nord -->
+                <div id="daumRoughmapContainer1737337374761" class="root_daum_roughmap root_daum_roughmap_landing">
+                </div>
+
+                <!-- 2. install scripts -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script"
+                    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. scripts -->
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp": "1737337374761",
+                        "key": "2mtqv",
+                        "mapWidth": "840",
+                        "mapHeight": "560"
+                    }).render();
+                </script>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-nav">
+            <ul class="foot1">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">가맹본부</a></li>
+            </ul>
+        </div>
+        <div class="footer-main">
+            <div class="footer-logo">
+                <img src="/img/footer.svg" alt="회사 로고">
+            </div>
+            <div class="footer-text">
+                <ul class="foot2">
+                    <li>주식회사 더스토리</li>
+                    <li>대표이사 : 안태영</li>
+                </ul>
+                <ul class="foot3">
+                    <li>사업자등록번호 : 541-88-02735</li>
+                    <li>T.1688.9804</li>
+                </ul>
+                <ul class="foot4">
+                    <li>COPYRIGHT(C) 2024, KIMBAPJANGSU ALL RIGHTS RESERVED.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="toTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-up">
+                <polyline points="18 15 12 9 6 15" />
+            </svg>
+        </div>
+    </footer>
+
+
+
+
+
+
+    </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        });
+    </script>
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp": "1736841978824",
+            "key": "2mrxy",
+            "mapWidth": "640",
+            "mapHeight": "360"
+        }).render();
+    </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

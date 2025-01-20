@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea,
+button,
+a {
+    line-height: 150%;
+    color: #000;
+    font-size: 10px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #fff;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    border: 0;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.1s;
+}
+
+legend,
+caption {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+address,
+cite,
+em,
+var {
+    font-style: normal;
+}
+
+label {
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s;
+}
+
+.blind {
+    display: block !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: -10000px !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.ir {
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
