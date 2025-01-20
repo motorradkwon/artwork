@@ -1210,7 +1210,7 @@ a {
 }
 
 .midbanner2 {
-	background-image: url('img/midbanner2.jpg');
+	background-image: url('../img/midbanner2.jpg');
 	background-size: contain;
 	background-position: center;
 	height: 500px;
